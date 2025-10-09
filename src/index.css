@@ -1,0 +1,238 @@
+/* 🌐 Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f7f9fb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* 🌈 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* 🏠 Home Page */
+.home {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.links a {
+  background: #007bff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background: #0056b3;
+}
+
+/* 🔄 Sheet Navigation */
+.sheet-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  max-width: 500px;
+}
+
+.sheet-btn {
+  background: #6c757d;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.sheet-btn:hover {
+  background: #5a6268;
+  border-color: #007bff;
+  transform: translateY(-1px);
+}
+
+.sheet-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.sheet-header h2 {
+  margin: 0;
+  color: #495057;
+}
+
+/* 📊 Data Card */
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 95%;
+}
+
+.controls {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  max-width: 90%;
+}
+
+/* 📋 Table Styles */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  min-width: 500px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #f1f1f1;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+}
+
+tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .sheet-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sheet-nav {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .sheet-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  table {
+    font-size: 0.7rem;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  button, input {
+    width: 100%;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
