@@ -5,8 +5,8 @@ export default function Home() {
     <div className="home">
       {/* Navigation buttons for easy sheet switching */}
       <div className="sheet-nav">
-        <Link to="/sheet1" className="sheet-btn">Sheet 1</Link>
-        <Link to="/sheet2" className="sheet-btn">Sheet 2</Link>
+        <Link to="/sheet1" className="sheet-btn">PARTY CODE</Link>
+        <Link to="/sheet2" className="sheet-btn">PARTY CODE OUTER SIZE RATE</Link>
       </div>
     </div>
   );
