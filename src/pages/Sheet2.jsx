@@ -10,7 +10,7 @@ export default function Sheet2() {
       <div className="sheet-header">
         <div className="sheet-nav">
           <Link to="/" className="sheet-btn">Home</Link>
-          <Link to="/sheet1" className="sheet-btn">Sheet 1</Link>
+          <Link to="/sheet1" className="sheet-btn">PARTY CODE</Link>
         </div>
         <h2>PARTY CODE OUTER SIZE RATE</h2>
       </div>
